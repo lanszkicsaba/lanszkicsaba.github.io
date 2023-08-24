@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Csaba Lanszki CV Webpage</title>
+    <link rel="icon" type="image/x-icon" href="picture/favicon.ico">
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif
+        }
+    </style>
+</header>
+
+<body>
+    <nav>
+        <ul class="ulmenu">
+            <li class="limenu"><a href="./index.html">Home</a></li>
+            <li class="limenu"><a href="./aboutme.html">About Me</a></li>
+            <li class="limenu"><a class="active" href="./contact.html">Contact</a></li>
+            <li class="limenu" style="float:right"><img src="picture/logovaz.png" alt="Logo"
+                    style="width:42px;height:50px;"></li>
+        </ul>
+    </nav>
+    <div class="w3-content w3-margin-top" style="max-width:1500px;">
+        <div class="w3-row-padding">
+
+            <div class="w3-third2">
+
+                <div class="w3-white w3-text-grey w3-card-6 w3-container">
+                    <div class="w3-container w3-margin-bottom">
+                        <!--Section heading-->
+                        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
+                        <!--Section description-->
+                        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not
+                            hesitate to contact me directly.</p>
+
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-9 mb-md-0 mb-5">
+                                <form id="contact-form" name="contact-form">
+
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-md-6">
+                                            <div class="md-form mb-0">
+                                                <input type="text" id="name" name="name" class="form-control"
+                                                    placeholder="Your name">
+                                                <label for="name" class=""></label>
+                                            </div>
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-md-6">
+                                            <div class="md-form mb-0">
+                                                <input type="text" id="email" name="email" class="form-control"
+                                                    placeholder="Your email">
+                                                <label for="email" class=""></label>
+                                            </div>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="md-form mb-0">
+                                                <input type="text" id="subject" name="subject" class="form-control"
+                                                    placeholder="Subject">
+                                                <label for="subject" class=""></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Grid row-->
+
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-md-12">
+
+                                            <div class="md-form">
+                                                <textarea type="text" id="message" name="message" rows="5"
+                                                    class="form-control md-textarea"
+                                                    placeholder="Your message"></textarea>
+                                                <label for="message"></label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!--Grid row-->
+
+                                </form>
+
+                                <div class="text-center text-md-left d-grid">
+                                    <a class="btn btn-primary"
+                                        onclick="document.getElementById('contact-form').submit();">Send</a>
+                                </div>
+                                <div class="status"></div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-3 text-center">
+                                <ul class="list-unstyled mb-0">
+                                    <li><i class="fa fa-map-marker fa-fw w3-large2 w3-text-orange"></i>
+                                        <p>Mezőkövesd, Hungary</p>
+                                    </li>
+
+                                    <li><i class="fa fa-phone fa-fw w3-large2 w3-text-orange"></i>
+                                        <p><button style="color: #757575;" class="btn" id="btn">Click to view the phone number</button></p>
+                                    </li>
+                                    <script src="js/btnchange.js"></script>
+
+                                    <li><i class="fa fa-envelope fa-fw w3-large2 w3-text-orange"></i>
+                                        <p>lanszkics@gmail.com</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+
+                        </section>
+                        <!--Section: Contact v.2-->
+                    </div>
+                </div>
+            </div>
+</body>
+<script>
+    swal("Attention", "Sorry, the form is not work.", "error");
+</script>
+
+</html>
