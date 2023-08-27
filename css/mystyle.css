@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+  overflow:hidden;
+}
+
 .center {
     padding: 110px 0;
     color: aliceblue;
@@ -17,10 +22,17 @@
     background: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,1) 0%, rgba(246,41,12,1) 0%, rgba(241,111,92,1) 0%, rgba(86,63,140,1) 68%, rgba(13,40,162,1) 100%);
     background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(240,47,23,1) 0%, rgba(246,41,12,1) 0%, rgba(241,111,92,1) 0%, rgba(86,63,140,1) 68%, rgba(13,40,162,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#0d28a2', GradientType=1 );
+    height: auto;
+    min-height: 100%;
   }
 
   @media only screen and (max-width: 600px) {
     .center {
-      padding: 70px 0;
+      padding: 70px 0 275px;
+    }
+
+    .background {
+      height: auto;
+      min-height: 100%;
     }
   }
