@@ -120,7 +120,7 @@
 
                                 <div class="text-center text-md-left d-grid">
                                     <a class="btn btn-primary"
-                                        onclick="document.getElementById('contact-form').submit();">Send</a>
+                                        onclick="submitClick();">Send</a>
                                 </div>
                                 <div class="status"></div>
                             </div>
@@ -154,7 +154,9 @@
             </div>
 </body>
 <script>
-    swal("Attention", "Sorry, the form is not work.", "error");
+    function submitClick(){
+         swal("Attention", "Unfortunately, your message was not sent because the form is not working. Please use my other contact details.", "error");
+    }
 </script>
 
 </html>
