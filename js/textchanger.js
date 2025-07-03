@@ -1,5 +1,5 @@
 (function () {
-    var words = ["Researcher","Software Developer", "Web Developer", "Data Scientist", "UX/UI Designer"],
+    var words = ["Researcher","Software Developer", "Web Developer", "Data Scientist", "UX/UI Designer", "Ethical Hacker"],
     i = 0;   
     setInterval(function(){ $('#words').fadeOut(function(){
         $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
