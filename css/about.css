@@ -245,3 +245,31 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     }
   }
 
+/* Make the bottom overlay run full-width across the image */
+.w3-display-container .w3-display-bottomleft {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(60,60,60,0.95) 30%, rgba(140,140,140,0.75) 100%);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.w3-display-container .w3-display-bottomleft h2 {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: transparent;
+}
+
+@media only screen and (max-width: 480px) {
+    .w3-display-container .w3-display-bottomleft {
+        padding: 8px 10px;
+    }
+    .w3-display-container .w3-display-bottomleft h2 {
+        font-size: 18px;
+    }
+}
+
